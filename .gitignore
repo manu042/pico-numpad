@@ -1,0 +1,8 @@
+.DS_Store
+
+# KiCad
+*.kicad_prl
+~*.lck
+
+# FreeCAD
+*.FCBak
