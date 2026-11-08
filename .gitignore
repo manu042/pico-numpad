@@ -1,6 +1,7 @@
 .DS_Store
 
 # KiCad
+.history/
 *.kicad_prl
 ~*.lck
 
