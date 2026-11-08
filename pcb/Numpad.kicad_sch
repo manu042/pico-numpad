@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Numpad")
-		(rev "0")
+		(rev "1")
 		(company "DIY")
 	)
 	(lib_symbols
@@ -403,7 +403,151 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+<<<<<<< HEAD
 		(symbol "Device:RotaryEncoder_Switch"
+=======
+		(symbol "Device:RotaryEncoder_Switch_MP"
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(pin_names
 				(offset 0.254)
 				(hide yes)
@@ -414,7 +558,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 0 6.604 0)
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -423,8 +567,8 @@
 					)
 				)
 			)
-			(property "Value" "RotaryEncoder_Switch"
-				(at 0 -6.604 0)
+			(property "Value" "RotaryEncoder_Switch_MP"
+				(at 0 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -445,7 +589,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 6.604 0)
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -455,8 +599,8 @@
 					)
 				)
 			)
-			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
-				(at 0 0 0)
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+				(at 0 -15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -488,7 +632,7 @@
 					)
 				)
 			)
-			(symbol "RotaryEncoder_Switch_0_1"
+			(symbol "RotaryEncoder_Switch_MP_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -713,7 +857,7 @@
 					)
 				)
 			)
-			(symbol "RotaryEncoder_Switch_1_1"
+			(symbol "RotaryEncoder_Switch_MP_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -761,6 +905,24 @@
 						)
 					)
 					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2540,9 +2702,20 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Pull-down Resistors"
+		(exclude_from_sim no)
+		(at 178.308 103.632 0)
+		(effects
+			(font
+				(size 2.032 2.032)
+				(thickness 0.254)
+			)
+		)
+		(uuid "47231d29-cc2f-42af-afb5-aa674215156d")
+	)
 	(text "Rotary Encoder"
 		(exclude_from_sim no)
-		(at 80.772 171.45 0)
+		(at 90.17 167.64 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -2553,7 +2726,7 @@
 	)
 	(text "Display"
 		(exclude_from_sim no)
-		(at 252.73 133.096 0)
+		(at 257.81 138.176 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -2575,7 +2748,7 @@
 	)
 	(text "Stabilizer\n"
 		(exclude_from_sim no)
-		(at 217.424 130.048 0)
+		(at 256.794 104.648 0)
 		(effects
 			(font
 				(size 2.032 2.032)
@@ -2585,7 +2758,7 @@
 		(uuid "e20ba248-7ae7-474b-9afb-36bae21f1595")
 	)
 	(junction
-		(at 187.96 127)
+		(at 223.52 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "012e1d1d-eb79-4689-9527-0332a9d34182")
@@ -2597,10 +2770,22 @@
 		(uuid "044e3059-5421-47be-af27-573534acea47")
 	)
 	(junction
+		(at 66.04 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0727b1a0-d5ac-442c-af2a-1e65a33f2259")
+	)
+	(junction
 		(at 71.12 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0834613f-929c-47aa-a1b1-58e33ce7dc43")
+	)
+	(junction
+		(at 185.42 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19fec020-65cd-4813-bd85-8b492b3b210c")
 	)
 	(junction
 		(at 127 157.48)
@@ -2621,10 +2806,22 @@
 		(uuid "2693372e-c594-48c1-bb5a-abc5069c60ed")
 	)
 	(junction
+		(at 185.42 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "357f22c9-3b55-4d71-bea1-04cdbda61790")
+	)
+	(junction
 		(at 76.2 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "390ca745-8f6c-4d46-a7fd-738a108c86ec")
+	)
+	(junction
+		(at 223.52 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ec25f04-9c7a-494b-a524-0415a670c624")
 	)
 	(junction
 		(at 71.12 93.98)
@@ -2633,7 +2830,7 @@
 		(uuid "4fc526e3-585f-4d27-a4a4-7fdd58cae355")
 	)
 	(junction
-		(at 187.96 116.84)
+		(at 223.52 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a8933bb-dbc3-4b21-82ee-ab7428b387ef")
@@ -2643,6 +2840,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "663b2564-e7ee-476b-9487-cc66ee934451")
+	)
+	(junction
+		(at 129.54 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "669efba9-8154-491e-bfa9-66ed1e4c842a")
 	)
 	(junction
 		(at 127 132.08)
@@ -2673,6 +2876,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "73f7c92b-db43-4e2b-bc47-964e44553a1f")
+	)
+	(junction
+		(at 66.04 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e8b96fb-4cee-40e7-a466-78022f9226f0")
 	)
 	(junction
 		(at 121.92 93.98)
@@ -2711,10 +2920,16 @@
 		(uuid "9c76827a-36c9-4eec-b24a-fe923a946f70")
 	)
 	(junction
-		(at 187.96 137.16)
+		(at 223.52 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d7b2a73-2002-4d7f-83cc-6d05213a547c")
+	)
+	(junction
+		(at 138.43 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5d975e2-1eeb-4e5b-8e06-00210ff5c767")
 	)
 	(junction
 		(at 76.2 157.48)
@@ -2753,6 +2968,12 @@
 		(uuid "bb546abb-35d9-43c4-aff9-fb266e19746c")
 	)
 	(junction
+		(at 185.42 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf71a02c-d2ff-4c0e-9fbb-9d6bc0768f5b")
+	)
+	(junction
 		(at 20.32 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2763,6 +2984,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc180c21-0fab-4d66-9343-8c27436421d6")
+	)
+	(junction
+		(at 138.43 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ded36db4-6a95-4281-81b7-9ae052c674e2")
 	)
 	(junction
 		(at 71.12 43.18)
@@ -2777,7 +3004,7 @@
 		(uuid "e753c6fc-7c33-4f80-b3bd-1b880b815565")
 	)
 	(junction
-		(at 187.96 148.59)
+		(at 223.52 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7e44603-6952-4523-ab02-d6d778716d8d")
@@ -2788,9 +3015,98 @@
 		(color 0 0 0 0)
 		(uuid "ef71f849-70ad-4197-bd98-68b89bd21317")
 	)
+	(junction
+		(at 185.42 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f21cb6ec-0284-4031-abca-846e63241060")
+	)
+	(junction
+		(at 185.42 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f53c3620-3f7a-4548-b8a0-38a423478a50")
+	)
+<<<<<<< HEAD
+=======
+	(junction
+		(at 57.15 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f605212f-8ff9-417f-82fc-0fc671722a35")
+	)
+	(no_connect
+		(at 262.89 52.07)
+		(uuid "03f7697a-125f-4b82-b2d3-40c5f1a56423")
+	)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+	(no_connect
+		(at 262.89 46.99)
+		(uuid "0a2c9f00-139c-449a-a0c1-7c0d49f15b01")
+	)
+	(no_connect
+<<<<<<< HEAD
+=======
+		(at 262.89 69.85)
+		(uuid "1291be71-9691-4e0c-9886-b90d00694948")
+	)
+	(no_connect
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(at 262.89 49.53)
+		(uuid "13783825-7abb-4389-af14-e87e4f0b0723")
+	)
+	(no_connect
+		(at 262.89 74.93)
+		(uuid "2a33dc2d-911d-4a5a-8081-49b83c7c090d")
+	)
+	(no_connect
+<<<<<<< HEAD
+=======
+		(at 262.89 64.77)
+		(uuid "51615ac2-0c63-40f8-abb1-37a949b384fd")
+	)
+	(no_connect
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(at 234.95 19.05)
+		(uuid "589d0968-faa8-4d0f-ba6f-d6a18c01050f")
+	)
+	(no_connect
+		(at 217.17 36.83)
+		(uuid "62448dff-3cbd-454c-9623-32acc2efe2b8")
+	)
+	(no_connect
+		(at 217.17 34.29)
+		(uuid "79900574-e2cf-4cb4-8477-9a01770f4592")
+	)
+	(no_connect
+<<<<<<< HEAD
+		(at 262.89 69.85)
+		(uuid "a30c2431-adb2-47dd-abbd-1055374933b5")
+	)
+	(no_connect
+=======
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(at 240.03 19.05)
+		(uuid "a5cc1f3b-bf8a-4d9d-a73d-b8884f826b48")
+	)
+	(no_connect
+		(at 262.89 44.45)
+		(uuid "b3173446-0074-4bb9-ba42-480a4d3fa7d8")
+	)
+<<<<<<< HEAD
+	(no_connect
+		(at 262.89 64.77)
+		(uuid "d50fdcd5-0a15-4472-9fb7-863d2f8bc21e")
+	)
+	(no_connect
+		(at 262.89 72.39)
+		(uuid "ff0f3a4b-4ed4-4906-92a0-2855a3baad89")
+	)
+=======
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 	(wire
 		(pts
-			(xy 187.96 148.59) (xy 187.96 160.02)
+			(xy 223.52 149.86) (xy 223.52 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2830,6 +3146,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 182.88) (xy 57.15 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c011cda-9136-41b6-aaa0-f9556e193734")
+	)
+	(wire
+		(pts
 			(xy 101.6 55.88) (xy 143.51 55.88)
 		)
 		(stroke
@@ -2837,6 +3163,16 @@
 			(type default)
 		)
 		(uuid "0f6e40e4-1686-4f20-98ce-6136cba2c5a0")
+	)
+	(wire
+		(pts
+			(xy 223.52 107.95) (xy 227.33 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fd4dd83-3e11-419e-9d7a-ce78034a335e")
 	)
 	(wire
 		(pts
@@ -2860,7 +3196,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 127) (xy 187.96 137.16)
+			(xy 223.52 128.27) (xy 223.52 138.43)
 		)
 		(stroke
 			(width 0)
@@ -2880,6 +3216,49 @@
 	)
 	(wire
 		(pts
+<<<<<<< HEAD
+=======
+			(xy 66.04 177.8) (xy 66.04 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26085239-a1f3-4121-a310-e285a435b7a4")
+	)
+	(wire
+		(pts
+			(xy 57.15 182.88) (xy 73.66 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2846e788-1cf1-4f23-a1f9-522f0c1fc2aa")
+	)
+	(wire
+		(pts
+			(xy 146.05 177.8) (xy 138.43 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2990382a-8fe3-4c31-a156-7b97cb8cd28f")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(xy 185.42 133.35) (xy 185.42 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b0fcc5c-c006-4173-b0ae-b0ba639790c3")
+	)
+	(wire
+		(pts
 			(xy 71.12 119.38) (xy 71.12 144.78)
 		)
 		(stroke
@@ -2890,6 +3269,42 @@
 	)
 	(wire
 		(pts
+<<<<<<< HEAD
+=======
+			(xy 57.15 193.04) (xy 66.04 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f9268f3-5e4c-48a3-872f-70abbc5c3916")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(xy 177.8 113.03) (xy 172.72 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed6ef8a-b7b3-4305-a5ec-e009784d237a")
+	)
+	(wire
+		(pts
+<<<<<<< HEAD
+=======
+			(xy 73.66 180.34) (xy 57.15 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f550f00-1e6b-45c4-8435-da2280c36e36")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(xy 71.12 31.75) (xy 71.12 43.18)
 		)
 		(stroke
@@ -2920,6 +3335,49 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 123.19) (xy 185.42 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "447652fe-fee0-4aba-91e2-4b16a2db01b7")
+	)
+	(wire
+		(pts
+<<<<<<< HEAD
+=======
+			(xy 129.54 193.04) (xy 138.43 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45649b28-9bf4-4cbd-a8ea-e7f724a40ac0")
+	)
+	(wire
+		(pts
+			(xy 129.54 185.42) (xy 129.54 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46227c12-606a-4fda-ae90-563ed9174666")
+	)
+	(wire
+		(pts
+			(xy 73.66 177.8) (xy 66.04 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e77bed6-8f96-49d7-bb5e-76237cb810b7")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(xy 127 132.08) (xy 143.51 132.08)
 		)
 		(stroke
@@ -2930,13 +3388,46 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 106.68) (xy 187.96 116.84)
+			(xy 185.42 143.51) (xy 185.42 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "512ae87c-b9a7-4a0c-90b4-44ab9dcefced")
+	)
+	(wire
+		(pts
+<<<<<<< HEAD
+=======
+			(xy 146.05 180.34) (xy 129.54 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5517f970-ed5c-4b96-9319-c4271e27b8e0")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(xy 223.52 107.95) (xy 223.52 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "554e7579-2175-47a1-8726-a9546f64240c")
+	)
+	(wire
+		(pts
+			(xy 66.04 193.04) (xy 73.66 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d4ff3ba-f47b-4f02-ab30-e8285a7d4eee")
 	)
 	(wire
 		(pts
@@ -2960,6 +3451,29 @@
 	)
 	(wire
 		(pts
+<<<<<<< HEAD
+=======
+			(xy 129.54 182.88) (xy 146.05 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c43e9d5-e18c-422b-b56b-14f4b9f5f866")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(xy 177.8 133.35) (xy 172.72 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7163cbef-e6c5-48f0-a25a-922daeed44e2")
+	)
+	(wire
+		(pts
 			(xy 25.4 157.48) (xy 76.2 157.48)
 		)
 		(stroke
@@ -2980,7 +3494,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 184.15) (xy 107.95 184.15)
+			(xy 109.22 177.8) (xy 114.3 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2990,6 +3504,29 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 113.03) (xy 187.96 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7345141c-23b8-47d5-a5bc-5766ed1c4db4")
+	)
+	(wire
+		(pts
+<<<<<<< HEAD
+=======
+			(xy 138.43 177.8) (xy 138.43 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74b0cab9-8f50-4ee4-a44c-2fc51179d67c")
+	)
+	(wire
+		(pts
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(xy 45.72 68.58) (xy 45.72 93.98)
 		)
 		(stroke
@@ -3030,6 +3567,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 113.03) (xy 185.42 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "890866ef-f5c6-4a8a-ad5b-c91c69ce3d76")
+	)
+	(wire
+		(pts
 			(xy 20.32 119.38) (xy 20.32 144.78)
 		)
 		(stroke
@@ -3050,7 +3597,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 116.84) (xy 187.96 127)
+			(xy 223.52 118.11) (xy 223.52 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3060,13 +3607,23 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 137.16) (xy 187.96 148.59)
+			(xy 223.52 138.43) (xy 223.52 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9545d95f-82a5-455d-bd3d-8457ca09aefa")
+	)
+	(wire
+		(pts
+			(xy 138.43 177.8) (xy 129.54 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97f7b3d4-502a-41bb-b9fe-d591fc732036")
 	)
 	(wire
 		(pts
@@ -3090,6 +3647,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 143.51) (xy 172.72 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0e7866d-641e-4088-b9da-f21400383fe6")
+	)
+	(wire
+		(pts
 			(xy 50.8 55.88) (xy 76.2 55.88)
 		)
 		(stroke
@@ -3107,6 +3674,16 @@
 			(type default)
 		)
 		(uuid "a9014b8f-db0b-4612-b99d-038ffc3b0dc9")
+	)
+	(wire
+		(pts
+			(xy 177.8 153.67) (xy 172.72 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa78d00e-6a2e-4a1d-8e0d-eb6900805ce6")
 	)
 	(wire
 		(pts
@@ -3130,13 +3707,47 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 153.67) (xy 185.42 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f6ded0-fb9e-4350-95a0-aa2effbafd8a")
+	)
+	(wire
+		(pts
+<<<<<<< HEAD
 			(xy 40.64 184.15) (xy 45.72 184.15)
+=======
+			(xy 66.04 177.8) (xy 57.15 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bab0c2a4-1585-41c1-824c-153e41015b45")
+	)
+	(wire
+		(pts
+			(xy 36.83 177.8) (xy 41.91 177.8)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "bbdb3b20-bb4c-400b-82d1-8a04f41b92cc")
+	)
+	(wire
+		(pts
+			(xy 177.8 123.19) (xy 172.72 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd584c8-85a1-4bdb-b9f2-b76beb535e8b")
 	)
 	(wire
 		(pts
@@ -3147,6 +3758,16 @@
 			(type default)
 		)
 		(uuid "c06cbcf5-535c-4652-9242-cfb4bc976d86")
+	)
+	(wire
+		(pts
+			(xy 177.8 163.83) (xy 172.72 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9984ff6-6813-4d45-a99e-92cc8ef700ab")
 	)
 	(wire
 		(pts
@@ -3258,9 +3879,19 @@
 		)
 		(uuid "f40249d3-4c40-48f5-876c-8e31a765ab44")
 	)
+	(wire
+		(pts
+			(xy 138.43 193.04) (xy 146.05 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fea53a60-fb69-4c17-a045-d6d1ae0d1c45")
+	)
 	(global_label "Row 0"
 		(shape input)
-		(at 207.01 71.12 180)
+		(at 217.17 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3270,7 +3901,8 @@
 		)
 		(uuid "0033fb6b-2950-4b71-8fdb-c6ca88b62790")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.0982 71.12 0)
+			(at 208.2582 69.85 0)
+<<<<<<< HEAD
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3284,7 +3916,7 @@
 	)
 	(global_label "Row 3"
 		(shape input)
-		(at 207.01 78.74 180)
+		(at 217.17 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3294,7 +3926,9 @@
 		)
 		(uuid "019078b0-e9f4-4411-b49c-8eb18892b2eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.0982 78.74 0)
+			(at 208.2582 77.47 0)
+=======
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3308,17 +3942,25 @@
 	)
 	(global_label "Encoder 2B"
 		(shape input)
-		(at 252.73 58.42 0)
+<<<<<<< HEAD
+		(at 262.89 57.15 0)
+=======
+		(at 217.17 49.53 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "0544776b-62d1-46f0-be4d-5c2fe10e302c")
+		(uuid "00bc2079-c0fa-41a5-8cd8-03b2350ad7c1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 266.7217 58.42 0)
+<<<<<<< HEAD
+			(at 276.8817 57.15 0)
+=======
+			(at 203.1783 49.53 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3326,13 +3968,37 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 3"
+		(shape input)
+		(at 217.17 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "019078b0-e9f4-4411-b49c-8eb18892b2eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.2582 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
 	(global_label "Column 3"
 		(shape input)
-		(at 107.95 189.23 180)
+		(at 114.3 182.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3342,7 +4008,7 @@
 		)
 		(uuid "09f37ea5-7b34-40f6-859f-1b3cc27104a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.7122 189.23 0)
+			(at 102.0622 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3402,9 +4068,9 @@
 			)
 		)
 	)
-	(global_label "Column 1"
+	(global_label "SDA"
 		(shape input)
-		(at 207.01 60.96 180)
+		(at 217.17 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3412,9 +4078,12 @@
 			)
 			(justify right)
 		)
-		(uuid "157e0786-00c2-4017-a7c0-8d3c4caa5007")
+		(uuid "178f2489-b2f2-4fa9-97a5-0105effa599a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7722 60.96 0)
+<<<<<<< HEAD
+			(at 204.9322 59.69 0)
+=======
+			(at 210.6167 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3423,6 +4092,151 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "Encoder 2A"
+		(shape input)
+		(at 217.17 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1938ae64-2d10-426a-becd-01628eb2fc10")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.3597 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 3"
+		(shape input)
+		(at 172.72 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b5b0383-f2f2-4bdb-bd85-11e8ea754cde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 262.89 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22d90ffb-b825-4132-b395-889a0400f449")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.7457 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Encoder 1A"
+		(shape input)
+		(at 217.17 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "25cd76a2-3cb1-41f3-80f3-e0abee674237")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.3597 44.45 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 3"
+		(shape input)
+		(at 172.72 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1b5b0383-f2f2-4bdb-bd85-11e8ea754cde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 262.89 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22d90ffb-b825-4132-b395-889a0400f449")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.7457 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -3474,9 +4288,33 @@
 			)
 		)
 	)
+	(global_label "BLK"
+		(shape input)
+		(at 217.17 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d416b11-24af-461c-a038-c327b6cd3d69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.6167 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "Row 2"
 		(shape input)
-		(at 207.01 76.2 180)
+		(at 217.17 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3486,7 +4324,7 @@
 		)
 		(uuid "2e086ebb-821f-425c-a2d5-4ce3de8a49b3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.0982 76.2 0)
+			(at 208.2582 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3500,7 +4338,7 @@
 	)
 	(global_label "Row 1"
 		(shape input)
-		(at 207.01 73.66 180)
+		(at 217.17 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3510,7 +4348,82 @@
 		)
 		(uuid "30a22f0d-5f3a-4d84-9dce-cd58b5c27c21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.0982 73.66 0)
+			(at 208.2582 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 0"
+		(shape input)
+		(at 172.72 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "36fbaaed-a1b8-42b0-9a51-79b6923fc599")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 113.03 0)
+<<<<<<< HEAD
+=======
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 146.05 193.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "398ff2c8-da79-4182-a97f-bf47a8319409")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.6638 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Row 5"
+		(shape input)
+		(at 217.17 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e50a966-a675-472d-a988-abaf960574b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.2582 62.23 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3524,7 +4437,8 @@
 	)
 	(global_label "Encoder 1B"
 		(shape input)
-		(at 252.73 53.34 0)
+<<<<<<< HEAD
+		(at 262.89 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3534,7 +4448,7 @@
 		)
 		(uuid "3b5302e2-219d-4e71-a782-29886fd77918")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 266.7217 53.34 0)
+			(at 276.8817 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3546,9 +4460,36 @@
 			)
 		)
 	)
+	(global_label "DC"
+		(shape input)
+		(at 217.17 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3e055cf0-7fa7-446b-8537-fd91a89bcd3a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 211.6448 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "Encoder 1B"
 		(shape input)
 		(at 60.96 184.15 0)
+=======
+		(at 73.66 177.8 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3558,7 +4499,7 @@
 		)
 		(uuid "48312956-c8ae-4146-b572-6690d141074c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.9517 184.15 0)
+			(at 87.6517 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3567,22 +4508,59 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "Row 2"
+<<<<<<< HEAD
+		(shape input)
+		(at 172.72 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4899205b-d98e-47d8-82ea-3e10a0b7be83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
 	(global_label "Encoder 1A"
 		(shape input)
-		(at 252.73 55.88 0)
+		(at 262.89 54.61 0)
+=======
+		(shape input)
+		(at 172.72 133.35 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+<<<<<<< HEAD
 			(justify left)
 		)
 		(uuid "4bb0b08c-3a0f-4d55-b142-819bdeefb19e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 266.5403 55.88 0)
+			(at 276.7003 54.61 0)
+=======
+			(justify right)
+		)
+		(uuid "4899205b-d98e-47d8-82ea-3e10a0b7be83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 133.35 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3590,119 +4568,41 @@
 				(font
 					(size 1.27 1.27)
 				)
+<<<<<<< HEAD
 				(justify left)
-			)
-		)
-	)
-	(global_label "RES"
-		(shape input)
-		(at 207.01 50.8 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4f7302fc-b3d8-4e73-91fa-17bee74f59a4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.3963 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "BLK"
-		(shape input)
-		(at 207.01 55.88 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "56137b30-f185-4a88-92b0-cc68c11e8e43")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.4567 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SDA"
-		(shape input)
-		(at 207.01 48.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5a662404-cf20-451d-b6dc-d5181770083c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.4567 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "DC"
-		(shape input)
-		(at 207.01 53.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6136da2f-d6e1-4116-a69c-93d98c9d3517")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.4848 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 	)
 	(global_label "Encoder 2A"
 		(shape input)
-		(at 252.73 60.96 0)
+		(at 262.89 59.69 0)
+=======
+				(justify right)
+			)
+		)
+	)
+	(global_label "Column 1"
+		(shape input)
+		(at 217.17 64.77 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+<<<<<<< HEAD
 			(justify left)
 		)
 		(uuid "61acbd08-8cb7-410f-9f72-4dcb04d31c64")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 266.5403 60.96 0)
+			(at 276.7003 59.69 0)
+=======
+			(justify right)
+		)
+		(uuid "4c7aaad8-1dff-4393-ab9a-f0cf1864a91c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.9322 64.77 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3710,13 +4610,65 @@
 				(font
 					(size 1.27 1.27)
 				)
+<<<<<<< HEAD
 				(justify left)
+=======
+				(justify right)
+			)
+		)
+	)
+	(global_label "Encoder 1B"
+		(shape input)
+		(at 217.17 41.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "538377c6-5bf1-4707-bff3-0f3fbc950d79")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.1783 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 217.17 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58dd65d7-7bf8-4df7-ab99-be9ff4d076e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.6772 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			)
 		)
 	)
 	(global_label "BLK"
 		(shape input)
-		(at 254 153.67 180)
+		(at 259.08 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3726,7 +4678,7 @@
 		)
 		(uuid "652fa763-27cb-464c-a2db-b67a5c488d19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.4467 153.67 0)
+			(at 252.5267 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3740,7 +4692,7 @@
 	)
 	(global_label "RES"
 		(shape input)
-		(at 254 148.59 180)
+		(at 259.08 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3750,7 +4702,7 @@
 		)
 		(uuid "676612e1-1388-4ae6-8b38-00c7e4ee6bab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.3863 148.59 0)
+			(at 252.4663 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3764,7 +4716,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 229.87 93.98 270)
+		(at 240.03 92.71 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3774,7 +4726,43 @@
 		)
 		(uuid "6cd30338-4690-4b94-a978-5a8be30820f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.87 100.8357 90)
+			(at 240.03 99.5657 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+<<<<<<< HEAD
+	(global_label "RES"
+		(shape input)
+		(at 217.17 52.07 180)
+=======
+	(global_label "Column 4"
+		(shape input)
+		(at 217.17 67.31 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+<<<<<<< HEAD
+		(uuid "6e9af5c6-2976-4257-b162-347f5cb98cc2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.5563 52.07 0)
+=======
+		(uuid "6cfe6944-2102-4310-bb2b-c17254006474")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.9322 67.31 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3788,7 +4776,7 @@
 	)
 	(global_label "Encoder 2B"
 		(shape input)
-		(at 123.19 184.15 0)
+		(at 146.05 177.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3798,7 +4786,7 @@
 		)
 		(uuid "7127676b-69f1-4187-b72a-d083db3256d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.1817 184.15 0)
+			(at 160.0417 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3812,7 +4800,7 @@
 	)
 	(global_label "Encoder 2A"
 		(shape input)
-		(at 123.19 189.23 0)
+		(at 146.05 182.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3822,7 +4810,7 @@
 		)
 		(uuid "73515f2c-5938-4c0d-abfd-e208fa083b0e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 137.0003 189.23 0)
+			(at 159.8603 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3831,6 +4819,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "DC"
+		(shape input)
+		(at 217.17 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7599d1b0-2c6a-4c61-9bfd-02d4cd4320a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 211.6448 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -3860,7 +4872,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 234.95 20.32 90)
+		(at 245.11 19.05 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3870,7 +4882,7 @@
 		)
 		(uuid "7db9625a-e920-4862-a3e0-5586bba29a7b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.95 13.7062 90)
+			(at 245.11 12.4362 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3908,7 +4920,7 @@
 	)
 	(global_label "DC"
 		(shape input)
-		(at 254 151.13 180)
+		(at 259.08 156.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3918,31 +4930,7 @@
 		)
 		(uuid "81cf0497-9bcc-46f3-88e1-7c535ba54bea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 248.4748 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SCL"
-		(shape input)
-		(at 207.01 45.72 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "84ac45d1-67c8-421c-ac70-ee56afa7b69d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.5172 45.72 0)
+			(at 253.5548 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3980,7 +4968,7 @@
 	)
 	(global_label "VCC"
 		(shape input)
-		(at 254 140.97 180)
+		(at 259.08 146.05 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3990,7 +4978,8 @@
 		)
 		(uuid "8cbea6f8-735a-4de2-bf87-25289966925f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.3862 140.97 0)
+			(at 252.4662 146.05 0)
+<<<<<<< HEAD
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4004,7 +4993,7 @@
 	)
 	(global_label "Column 2"
 		(shape input)
-		(at 207.01 63.5 180)
+		(at 217.17 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4014,7 +5003,33 @@
 		)
 		(uuid "8e39a02f-9ee0-4c83-8abe-d79c541777cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7722 63.5 0)
+			(at 204.9322 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 5"
+		(shape input)
+		(at 217.17 41.91 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8f8457d5-3e06-49c4-8259-d99a52793bed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.2582 41.91 0)
+=======
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4028,7 +5043,7 @@
 	)
 	(global_label "Column 0"
 		(shape input)
-		(at 45.72 189.23 180)
+		(at 41.91 182.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4038,7 +5053,7 @@
 		)
 		(uuid "906120e5-7156-4b69-a67f-92d04fc65144")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.4822 189.23 0)
+			(at 29.6722 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4050,19 +5065,19 @@
 			)
 		)
 	)
-	(global_label "GND"
+	(global_label "Row 4"
 		(shape input)
-		(at 187.96 106.68 0)
+		(at 172.72 153.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "9c82eaeb-5b5a-4dbb-ad35-dc781425b43a")
+		(uuid "97b3cb0f-e4d1-4d93-af23-9561a258a0a2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.8157 106.68 0)
+			(at 163.8082 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4070,7 +5085,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -4100,7 +5115,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 60.96 186.69 0)
+		(at 73.66 180.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4110,7 +5125,55 @@
 		)
 		(uuid "a274c603-6729-40d9-93c6-b1bffb3f5989")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.8157 186.69 0)
+			(at 80.5157 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Column 3"
+		(shape input)
+		(at 262.89 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab60ba16-ee82-47aa-a1f3-05b5ee983dc2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.1278 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 49.53 172.72 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "adf34b57-ded4-41d7-8070-6a89a6b8b306")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 49.53 165.8643 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4146,9 +5209,57 @@
 			)
 		)
 	)
+	(global_label "RES"
+		(shape input)
+		(at 217.17 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd42ad42-7099-4ffc-b371-ac7163144fe7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.5563 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 73.66 193.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bdc972ae-1fc1-4f1a-bb8d-3aba61faf41d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 80.2738 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape input)
-		(at 254 143.51 180)
+		(at 259.08 148.59 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4158,7 +5269,7 @@
 		)
 		(uuid "be9a8b69-6a3f-4339-b699-871499c93d50")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.5072 143.51 0)
+			(at 252.5872 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4194,9 +5305,13 @@
 			)
 		)
 	)
-	(global_label "Column 4"
+	(global_label "Row 4"
 		(shape input)
-		(at 207.01 68.58 180)
+<<<<<<< HEAD
+		(at 217.17 67.31 180)
+=======
+		(at 217.17 80.01 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4204,9 +5319,85 @@
 			)
 			(justify right)
 		)
-		(uuid "c9fb08f9-31c2-4453-98e2-008805efa4ce")
+		(uuid "cb39e031-173c-4f1f-bb0b-a30cf8a4aace")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7722 68.58 0)
+<<<<<<< HEAD
+			(at 204.9322 67.31 0)
+=======
+			(at 208.2582 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 5"
+		(shape input)
+		(at 101.6 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb950b7a-e7f4-4b1b-b0c6-a5ecd0219831")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.6882 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 146.05 180.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0703c61-9160-4a1e-8af0-8cbc28a26ec0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.9057 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 259.08 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d89fb121-42d9-4239-88df-6d062cce9263")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.2243 143.51 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4220,7 +5411,8 @@
 	)
 	(global_label "Column 0"
 		(shape input)
-		(at 207.01 58.42 180)
+<<<<<<< HEAD
+		(at 217.17 57.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4230,7 +5422,7 @@
 		)
 		(uuid "ca7c80c0-9eea-43ff-8ba2-21be74654380")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7722 58.42 0)
+			(at 204.9322 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4244,7 +5436,7 @@
 	)
 	(global_label "Row 4"
 		(shape input)
-		(at 207.01 81.28 180)
+		(at 217.17 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4254,7 +5446,7 @@
 		)
 		(uuid "cb39e031-173c-4f1f-bb0b-a30cf8a4aace")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.0982 81.28 0)
+			(at 208.2582 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4266,7 +5458,7 @@
 			)
 		)
 	)
-	(global_label "Row 0"
+	(global_label "Row 5"
 		(shape input)
 		(at 95.25 184.15 180)
 		(fields_autoplaced yes)
@@ -4293,6 +5485,9 @@
 	(global_label "GND"
 		(shape input)
 		(at 123.19 186.69 0)
+=======
+		(at 262.89 59.69 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4300,9 +5495,9 @@
 			)
 			(justify left)
 		)
-		(uuid "d0703c61-9160-4a1e-8af0-8cbc28a26ec0")
+		(uuid "d900ca63-0210-4c40-89c8-eea994635120")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.0457 186.69 0)
+			(at 275.1278 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4314,9 +5509,61 @@
 			)
 		)
 	)
-	(global_label "GND"
+	(global_label "BLK"
 		(shape input)
-		(at 254 138.43 180)
+<<<<<<< HEAD
+		(at 259.08 143.51 180)
+=======
+		(at 262.89 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d993c87f-b383-473c-85e2-0165586cb8f5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 269.4433 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Encoder 1A"
+		(shape input)
+		(at 73.66 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db7dfe59-446c-451e-9f56-48cf01d205ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 87.4703 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Row 1"
+		(shape input)
+		(at 172.72 123.19 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4324,9 +5571,13 @@
 			)
 			(justify right)
 		)
-		(uuid "d89fb121-42d9-4239-88df-6d062cce9263")
+		(uuid "dfc300c8-03c9-4cb2-bc94-2f34dc9d8d7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.1443 138.43 0)
+<<<<<<< HEAD
+			(at 252.2243 143.51 0)
+=======
+			(at 163.8082 123.19 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4338,9 +5589,9 @@
 			)
 		)
 	)
-	(global_label "Encoder 1A"
+	(global_label "GND"
 		(shape input)
-		(at 60.96 189.23 0)
+		(at 121.92 172.72 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4348,9 +5599,9 @@
 			)
 			(justify left)
 		)
-		(uuid "db7dfe59-446c-451e-9f56-48cf01d205ff")
+		(uuid "e2a04408-5911-44bb-adbb-56fb63d1ed1a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 74.7703 189.23 0)
+			(at 121.92 165.8643 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4364,7 +5615,64 @@
 	)
 	(global_label "SDA"
 		(shape input)
-		(at 254 146.05 180)
+<<<<<<< HEAD
+		(at 217.17 49.53 180)
+=======
+		(at 259.08 151.13 180)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de8802b5-49ac-4e61-8504-113a79f0e0f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+<<<<<<< HEAD
+			(at 210.6167 49.53 0)
+=======
+			(at 252.5267 151.13 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+<<<<<<< HEAD
+	(global_label "Row 1"
+		(shape input)
+		(at 172.72 123.19 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dfc300c8-03c9-4cb2-bc94-2f34dc9d8d7f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape input)
+		(at 259.08 151.13 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4374,7 +5682,7 @@
 		)
 		(uuid "e6ca0605-0ff4-4d67-949d-ab3d373e31a9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.4467 146.05 0)
+			(at 252.5267 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4386,9 +5694,132 @@
 			)
 		)
 	)
-	(global_label "Row 0"
+	(global_label "SCL"
 		(shape input)
-		(at 33.02 184.15 180)
+		(at 217.17 46.99 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e6cbe610-2036-4c32-a7b6-cec36b6205ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 210.6772 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 187.96 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e7adf934-0bb4-4342-bb04-89c92504362e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.8157 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Row 5"
+		(shape input)
+		(at 172.72 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee0fc144-6b44-44dd-916e-150f768541cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 5"
+=======
+	(global_label "GND"
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(shape input)
+		(at 187.96 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e7adf934-0bb4-4342-bb04-89c92504362e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 194.8157 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Row 5"
+		(shape input)
+		(at 172.72 163.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee0fc144-6b44-44dd-916e-150f768541cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.8082 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Row 5"
+		(shape input)
+		(at 29.21 177.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4398,7 +5829,7 @@
 		)
 		(uuid "eff9da7d-dd57-458b-b3ca-05a2e18fdd3f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.1082 184.15 0)
+			(at 20.2982 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4410,19 +5841,20 @@
 			)
 		)
 	)
-	(global_label "Column 3"
+	(global_label "GND"
+<<<<<<< HEAD
 		(shape input)
-		(at 207.01 66.04 180)
+		(at 227.33 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "ffe58a69-b2e0-4599-b738-82b0c6bad527")
+		(uuid "f0bd0443-7342-40bb-a258-c3156bfb8c42")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 194.7722 66.04 0)
+			(at 234.1857 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4430,24 +5862,80 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Column 3"
+		(shape input)
+		(at 217.17 64.77 180)
+=======
+		(shape input)
+		(at 227.33 107.95 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f0bd0443-7342-40bb-a258-c3156bfb8c42")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+<<<<<<< HEAD
+			(at 204.9322 64.77 0)
+=======
+			(at 234.1857 107.95 0)
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "Column 2"
+		(shape input)
+		(at 262.89 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f1d3ddfa-f3f6-46f0-b691-9c60d7ab9f36")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.1278 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 148.59 90)
+		(at 220.98 149.86 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "008c3fd0-0427-4699-8199-ee2e8c06900a")
 		(property "Reference" "H5"
-			(at 184.15 142.24 90)
+			(at 219.71 143.51 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4457,7 +5945,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 144.78 90)
+			(at 219.71 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4467,7 +5955,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
-			(at 185.42 148.59 0)
+			(at 220.98 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4478,7 +5966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 148.59 0)
+			(at 220.98 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4489,7 +5977,18 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 185.42 148.59 0)
+			(at 220.98 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 220.98 149.86 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4512,8 +6011,8 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 217.17 135.89 0)
+		(lib_id "Device:R")
+		(at 181.61 123.19 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4521,32 +6020,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05c26927-d36a-4463-94fa-97784ea4dafe")
-		(property "Reference" "S1"
-			(at 223.52 134.4929 0)
+		(uuid "021092be-44cb-4504-82e6-42ef8a379dcd")
+		(property "Reference" "R2"
+			(at 181.61 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "MX_stab"
-			(at 223.52 137.0329 0)
+		(property "Value" "4,7k"
+			(at 181.61 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_2u"
-			(at 217.17 135.89 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 181.61 124.968 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4557,7 +6053,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 135.89 0)
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05f33dda-096f-4b9a-9f83-bcd59f80100a")
+		)
+		(pin "2"
+			(uuid "b550d3dd-2b81-4829-84ae-f84efadb9e4e")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_stab")
+		(at 256.54 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "05c26927-d36a-4463-94fa-97784ea4dafe")
+		(property "Reference" "S1"
+			(at 262.89 109.0929 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MX_stab"
+			(at 262.89 111.6329 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_2u"
+			(at 256.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4568,7 +6146,18 @@
 			)
 		)
 		(property "Description" "Cherry MX-style stabilizer"
-			(at 217.17 135.89 0)
+			(at 256.54 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 256.54 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4652,6 +6241,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "30f2f331-2f43-4966-9ca6-b6e6892aba8d")
 		)
@@ -4722,6 +6322,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 124.46 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 124.46 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -4836,6 +6447,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 101.6 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7bf22077-d4ae-4c47-879d-bcfb02e33d39")
 		)
@@ -4846,6 +6468,90 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 181.61 163.83 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f04dda9-a891-4585-abae-54cb2d48e398")
+		(property "Reference" "R6"
+			(at 181.61 157.48 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+<<<<<<< HEAD
+		(property "Value" "4,7k"
+=======
+		(property "Value" "2,2k"
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
+			(at 181.61 160.02 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 181.61 165.608 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3e63004-4c91-4ee2-b75f-0037fb535388")
+		)
+		(pin "2"
+			(uuid "242526b9-78fe-48c6-8605-bab16b86ab31")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -4940,6 +6646,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 76.2 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c95db63f-5f0a-40ec-8bc1-46076468c66d")
 		)
@@ -4956,14 +6673,15 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "Device:RotaryEncoder_Switch")
 		(at 53.34 186.69 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "277656fe-348c-4462-9b0e-1b856a9efb89")
 		(property "Reference" "SW1"
@@ -5019,6 +6737,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 53.34 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C"
 			(uuid "72277a66-42c4-496a-bd79-a58a9ffa0b47")
 		)
@@ -5044,19 +6773,21 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 137.16 90)
+		(at 220.98 138.43 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2cc83605-8f41-45c5-840b-530fa9672d9f")
 		(property "Reference" "H4"
-			(at 184.15 130.81 90)
+			(at 219.71 132.08 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5066,7 +6797,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 133.35 90)
+			(at 219.71 134.62 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5076,7 +6807,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
-			(at 185.42 137.16 0)
+			(at 220.98 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5087,7 +6818,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 137.16 0)
+			(at 220.98 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5098,7 +6829,18 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 185.42 137.16 0)
+			(at 220.98 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 220.98 138.43 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5185,6 +6927,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 99.06 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "48d90a04-3e24-4828-8889-289f5b4faeb7")
 		)
@@ -5202,18 +6955,18 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 217.17 144.78 0)
+		(at 256.54 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "308ef3b4-1ce1-41ce-8c3e-892f7a090ce0")
 		(property "Reference" "S2"
-			(at 223.52 143.3829 0)
+			(at 262.89 117.9829 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5224,7 +6977,7 @@
 			)
 		)
 		(property "Value" "MX_stab"
-			(at 223.52 145.9229 0)
+			(at 262.89 120.5229 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5235,7 +6988,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_2u"
-			(at 217.17 144.78 0)
+			(at 256.54 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5246,7 +6999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 144.78 0)
+			(at 256.54 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5257,7 +7010,18 @@
 			)
 		)
 		(property "Description" "Cherry MX-style stabilizer"
-			(at 217.17 144.78 0)
+			(at 256.54 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 256.54 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5341,6 +7105,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 124.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "41a16d45-5f3c-40c9-ae70-80922835778d")
 		)
@@ -5358,7 +7133,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 36.83 184.15 0)
+		(at 33.02 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5369,7 +7144,7 @@
 		(fields_autoplaced yes)
 		(uuid "32e627fb-9cc5-4eb1-90b4-872a9b93f664")
 		(property "Reference" "D21"
-			(at 36.83 177.8 0)
+			(at 33.02 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5379,7 +7154,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 36.83 180.34 0)
+			(at 33.02 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5389,7 +7164,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 36.83 188.595 0)
+			(at 33.02 182.245 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5400,7 +7175,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
-			(at 36.83 184.15 0)
+			(at 33.02 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5411,7 +7186,7 @@
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
-			(at 36.83 184.15 0)
+			(at 33.02 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5422,7 +7197,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 36.83 184.15 0)
+			(at 33.02 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5433,6 +7208,28 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 33.02 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
+			(at 33.02 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
 			(at 36.83 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -5523,6 +7320,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 99.06 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "997498cb-3db9-4f79-a51a-26d2b423621d")
 		)
@@ -5603,6 +7411,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 22.86 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9a68dade-978e-4df8-b17e-ef04b4bb15f1")
 		)
@@ -5620,18 +7439,18 @@
 	)
 	(symbol
 		(lib_id "MCU_Module:RaspberryPi_Pico")
-		(at 229.87 58.42 0)
+		(at 240.03 57.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36187b2e-5c61-4819-ad26-572b615d60f3")
 		(property "Reference" "A1"
-			(at 232.0133 92.71 0)
+			(at 242.1733 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5642,7 +7461,7 @@
 			)
 		)
 		(property "Value" "RaspberryPi_Pico"
-			(at 232.0133 95.25 0)
+			(at 242.1733 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5653,7 +7472,7 @@
 			)
 		)
 		(property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
-			(at 229.87 105.41 0)
+			(at 240.03 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5664,7 +7483,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
-			(at 229.87 107.95 0)
+			(at 240.03 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5675,7 +7494,18 @@
 			)
 		)
 		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
-			(at 229.87 110.49 0)
+			(at 240.03 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 240.03 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5879,6 +7709,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 48.26 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e2c8a7ab-c020-4177-bd4a-9ae8e7a8f36c")
 		)
@@ -5974,6 +7815,17 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 76.2 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
+			(at 76.2 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6087,6 +7939,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 50.8 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e8585d09-7580-49ce-bc13-d564a7817991")
 		)
@@ -6182,6 +8045,17 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 101.6 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
+			(at 101.6 52.07 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6295,6 +8169,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 76.2 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5f3862b5-6340-4fa9-9af0-655e4941dbe4")
 		)
@@ -6399,6 +8284,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 76.2 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "acd0255f-9ba3-435b-8e4d-3c4d4394ce2e")
 		)
@@ -6479,6 +8375,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 73.66 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4b9f1fad-4f39-40f6-8d41-f60a661cdc85")
 		)
@@ -6496,18 +8403,18 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 116.84 90)
+		(at 220.98 118.11 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d2b358e-5a6a-46b4-9e0f-5ed532a16f29")
 		(property "Reference" "H2"
-			(at 184.15 110.49 90)
+			(at 219.71 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6517,7 +8424,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 113.03 90)
+			(at 219.71 114.3 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6527,7 +8434,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
-			(at 185.42 116.84 0)
+			(at 220.98 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6538,7 +8445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 116.84 0)
+			(at 220.98 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6549,7 +8456,18 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 185.42 116.84 0)
+			(at 220.98 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 220.98 118.11 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6651,6 +8569,17 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 127 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
+			(at 127 102.87 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6764,6 +8693,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 127 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8072d8cb-0de1-4ec5-9552-b9d7b470b64b")
 		)
@@ -6844,6 +8784,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 73.66 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "99d2f66d-104c-4305-9235-661523323d99")
 		)
@@ -6854,6 +8805,88 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "MX7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 138.43 189.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "634e20db-4ad9-4335-8720-0e9b8160bf7a")
+		(property "Reference" "R10"
+			(at 140.97 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 140.97 190.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 140.208 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 138.43 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32036ed8-7a11-459f-844d-8f3b0ee126ce")
+		)
+		(pin "2"
+			(uuid "981071e6-b087-4145-8b7c-9d10f96259fb")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -6914,6 +8947,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 22.86 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 22.86 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -7028,6 +9072,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 127 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fde31c14-40c9-45f1-9f6e-b853f8d39c24")
 		)
@@ -7044,8 +9099,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x07_Socket")
-		(at 259.08 146.05 0)
+		(lib_id "Device:R")
+		(at 181.61 143.51 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7054,31 +9109,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6c7fcfa7-cc73-439a-bb8f-412eb59e5279")
-		(property "Reference" "J1"
-			(at 260.35 144.7799 0)
+		(uuid "6bee681f-3008-4891-a2c4-6d091dc231f3")
+		(property "Reference" "R4"
+			(at 181.61 137.16 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x07_Socket"
-			(at 260.35 147.3199 0)
+		(property "Value" "4,7k"
+			(at 181.61 139.7 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
-			(at 259.08 146.05 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 181.61 145.288 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7089,7 +9142,89 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 146.05 0)
+			(at 181.61 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f55703d-9eb3-43ad-8a1f-0f3673e1a0df")
+		)
+		(pin "2"
+			(uuid "1136c188-c639-4183-8444-11806fe46dc9")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x07_Socket")
+		(at 264.16 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c7fcfa7-cc73-439a-bb8f-412eb59e5279")
+		(property "Reference" "J1"
+			(at 265.43 149.8599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x07_Socket"
+			(at 265.43 152.3999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical"
+			(at 264.16 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7100,7 +9235,18 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated. Use Mill-Max sockets"
-			(at 259.08 146.05 0)
+			(at 264.16 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 264.16 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7229,6 +9375,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 25.4 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "82f94dd4-7c2b-4d98-9b3e-c183e5a93f4f")
 		)
@@ -7239,6 +9396,86 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 181.61 133.35 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "702ffa8a-f3bf-4151-92ea-638c67462b36")
+		(property "Reference" "R3"
+			(at 181.61 127 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 181.61 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 181.61 135.128 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "aebdae45-cf1d-4643-9729-b8d13cd5bcfd")
+		)
+		(pin "2"
+			(uuid "812fb8b4-8ba2-4bbe-9e3a-dae521c3eb08")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -7332,6 +9569,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 50.8 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "cbb11e1b-1ba9-45a5-851f-748cac35d8d3")
 		)
@@ -7348,8 +9596,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 57.15 189.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7578d321-0a2b-4412-8221-b12d085056da")
+		(property "Reference" "R7"
+			(at 59.69 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 59.69 190.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 58.928 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 57.15 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56eaee54-cad4-4167-9dbb-b3540aa9202b")
+		)
+		(pin "2"
+			(uuid "2f04ea49-d81d-4e90-a036-0efc16159a01")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 99.06 184.15 0)
+		(at 105.41 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7360,7 +9690,7 @@
 		(fields_autoplaced yes)
 		(uuid "76966a9c-14b1-477b-a7a0-0c793751d999")
 		(property "Reference" "D22"
-			(at 99.06 177.8 0)
+			(at 105.41 171.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7370,7 +9700,7 @@
 			)
 		)
 		(property "Value" "1N4148W"
-			(at 99.06 180.34 0)
+			(at 105.41 173.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7380,7 +9710,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 99.06 188.595 0)
+			(at 105.41 182.245 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7391,7 +9721,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
-			(at 99.06 184.15 0)
+			(at 105.41 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7402,7 +9732,7 @@
 			)
 		)
 		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
-			(at 99.06 184.15 0)
+			(at 105.41 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7413,7 +9743,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 99.06 184.15 0)
+			(at 105.41 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7424,6 +9754,28 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 105.41 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
+			(at 105.41 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "1N4148W"
 			(at 99.06 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -7514,6 +9866,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 22.86 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6466f31f-e167-499c-8b92-e05ce977c52f")
 		)
@@ -7524,6 +9887,86 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "MX1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 181.61 113.03 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d3ae067-c241-479b-98d9-96338e58abed")
+		(property "Reference" "R1"
+			(at 181.61 106.68 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 181.61 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 181.61 114.808 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bed4080b-a947-4af0-a559-8ecf125ad866")
+		)
+		(pin "2"
+			(uuid "2c61f78e-063d-4dae-805a-e867d55c187c")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7618,6 +10061,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 50.8 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "12a9c8ef-930c-4b93-95f4-e20ed985130c")
 		)
@@ -7688,6 +10142,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 48.26 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 48.26 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -7802,6 +10267,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 76.2 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "294c44cc-d7a5-4eb6-b025-09bc4cd820f4")
 		)
@@ -7812,6 +10288,88 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 66.04 189.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8cfaa8e7-5d63-462b-9d80-da198e8ddc37")
+		(property "Reference" "R8"
+			(at 68.58 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 68.58 190.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 67.818 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 66.04 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "270a82d3-9d50-4f49-867b-afd8ba8878af")
+		)
+		(pin "2"
+			(uuid "7dabbe43-8d7c-4081-90b3-c7402bec9559")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -7872,6 +10430,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 124.46 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 124.46 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -7986,6 +10555,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 25.4 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8a77a180-f31d-4b70-b864-860a65c8be46")
 		)
@@ -8003,18 +10583,18 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 160.02 90)
+		(at 220.98 161.29 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "921383b3-d908-4f0b-a88d-2bc8eb72a178")
 		(property "Reference" "H6"
-			(at 184.15 153.67 90)
+			(at 219.71 154.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8024,7 +10604,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 156.21 90)
+			(at 219.71 157.48 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8034,7 +10614,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
-			(at 185.42 160.02 0)
+			(at 220.98 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8045,7 +10625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 160.02 0)
+			(at 220.98 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8056,7 +10636,18 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 185.42 160.02 0)
+			(at 220.98 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 220.98 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8073,6 +10664,88 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 129.54 189.23 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96f2baf3-2965-4a3a-b457-f09eaa191360")
+		(property "Reference" "R9"
+			(at 132.08 187.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 132.08 190.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 131.318 189.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 129.54 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8af63ba8-1fa9-4345-afd1-0368a9fa5760")
+		)
+		(pin "2"
+			(uuid "d055e325-42a2-4800-a2a3-b8146fbf06a0")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -8133,6 +10806,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 48.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 48.26 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -8247,6 +10931,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 50.8 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0b175969-19b2-4aab-ab2a-f623a3638a59")
 		)
@@ -8257,6 +10952,97 @@
 			(project "Numpad"
 				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
 					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 49.53 180.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a155c5db-0fa7-4882-a823-df4015aa41e5")
+		(property "Reference" "SW1"
+			(at 49.53 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 43.18 190.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm"
+			(at 53.34 184.404 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 49.53 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "S1"
+			(uuid "7fead08d-1015-4bef-b471-1a99c5295a33")
+		)
+		(pin "C"
+			(uuid "b4802387-7294-4a61-bbef-4aa811ef7019")
+		)
+		(pin "MP"
+			(uuid "2031717f-35d2-4ee0-acf0-72d98bd2c9f6")
+		)
+		(pin "S2"
+			(uuid "dd505b1b-90c5-4faf-aaff-509cc30e11d6")
+		)
+		(pin "B"
+			(uuid "a37ba4b6-3a9b-4c3d-9f84-d9ad5519a9df")
+		)
+		(pin "A"
+			(uuid "a6df2814-d77a-41ae-8d73-9183af0c5581")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8327,6 +11113,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 73.66 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "18ed4f5f-6bb0-460a-840c-f746e1ec3f28")
 		)
@@ -8343,14 +11140,15 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
 		(lib_id "Device:RotaryEncoder_Switch")
 		(at 115.57 186.69 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a535b049-8b20-4180-b33c-b6238dcd73ae")
@@ -8407,6 +11205,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" ""
+			(at 115.57 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "C"
 			(uuid "af10dda0-ff7e-4580-bae2-ee3eb412952e")
 		)
@@ -8432,6 +11241,8 @@
 		)
 	)
 	(symbol
+=======
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(lib_id "Diode:1N4148W")
 		(at 25.4 153.67 90)
 		(unit 1)
@@ -8520,6 +11331,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 25.4 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a07055cc-e5fc-42f8-b4bf-8a1c40b2884d")
 		)
@@ -8537,18 +11359,18 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 106.68 90)
+		(at 220.98 107.95 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0019008-2be7-493a-86ad-e5b2dafde72e")
 		(property "Reference" "H1"
-			(at 184.15 100.33 90)
+			(at 219.71 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8558,7 +11380,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 102.87 90)
+			(at 219.71 104.14 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8568,7 +11390,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
-			(at 185.42 106.68 0)
+			(at 220.98 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8579,7 +11401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 106.68 0)
+			(at 220.98 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8590,7 +11412,18 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 185.42 106.68 0)
+			(at 220.98 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 220.98 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8701,6 +11534,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 25.4 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ec9d3d52-b7e9-404f-a8d0-2853e3c6f280")
 		)
@@ -8717,6 +11561,180 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 181.61 153.67 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c64f867c-5928-49d1-a4df-8e8302872bc8")
+		(property "Reference" "R5"
+			(at 181.61 147.32 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4,7k"
+			(at 181.61 149.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 181.61 155.448 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 181.61 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8d806a7c-7ad9-4902-b90f-b901984cb20f")
+		)
+		(pin "2"
+			(uuid "a389eb90-6816-4f94-a22a-089ec64b413c")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+<<<<<<< HEAD
+=======
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 121.92 180.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c688711b-145f-4049-92c6-abde3c1f2e8a")
+		(property "Reference" "SW2"
+			(at 121.92 187.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 115.57 190.246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm"
+			(at 125.73 184.404 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 121.92 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "S1"
+			(uuid "90120b7a-1528-40e7-8b3c-7d3d14ae44e6")
+		)
+		(pin "C"
+			(uuid "ba5c1c40-0216-43fa-8f76-57f30fd3690f")
+		)
+		(pin "MP"
+			(uuid "6f757e8b-4240-4afa-9fe4-d3e92a56f9b0")
+		)
+		(pin "S2"
+			(uuid "f9d072bb-d7fb-4896-af98-9304a45be43e")
+		)
+		(pin "B"
+			(uuid "78db45cf-58e8-44f3-bfb3-520de59e1310")
+		)
+		(pin "A"
+			(uuid "e8634d92-9dda-49a2-94e5-ccd325ac3cc6")
+		)
+		(instances
+			(project "Numpad"
+				(path "/01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 48.26 121.92 0)
 		(unit 1)
@@ -8771,6 +11789,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 48.26 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 48.26 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -8851,6 +11880,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 22.86 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 22.86 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -8965,6 +12005,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 25.4 77.47 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1026ba92-43b4-487d-8655-5547a48f1fdb")
 		)
@@ -8982,18 +12033,18 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 127 90)
+		(at 220.98 128.27 90)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d408031b-bdf8-4658-869c-90eeacc2de32")
 		(property "Reference" "H3"
-			(at 184.15 120.65 90)
+			(at 219.71 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9003,7 +12054,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 184.15 123.19 90)
+			(at 219.71 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9013,7 +12064,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_Pad"
-			(at 185.42 127 0)
+			(at 220.98 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9024,7 +12075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 127 0)
+			(at 220.98 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9035,7 +12086,18 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 185.42 127 0)
+			(at 220.98 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 220.98 128.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9112,6 +12174,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 73.66 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 73.66 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -9226,6 +12299,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "1N4148W"
+			(at 101.6 128.27 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "417260be-36e0-4cf0-851c-d2b7bc5d66d6")
 		)
@@ -9306,6 +12390,17 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "CPG151101S11-2"
+			(at 73.66 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "79f91c22-148f-4d1f-b85e-1d5db7bf4da9")
 		)
@@ -9323,18 +12418,18 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_stab")
-		(at 217.17 152.4 0)
+		(at 256.54 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f531421a-00c4-4236-acdf-4906d9aff410")
 		(property "Reference" "S3"
-			(at 223.52 151.0029 0)
+			(at 262.89 125.6029 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9345,7 +12440,7 @@
 			)
 		)
 		(property "Value" "MX_stab"
-			(at 223.52 153.5429 0)
+			(at 262.89 128.1429 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9356,7 +12451,7 @@
 			)
 		)
 		(property "Footprint" "PCM_marbastlib-mx:STAB_MX_2u"
-			(at 217.17 152.4 0)
+			(at 256.54 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9367,7 +12462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 152.4 0)
+			(at 256.54 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9378,7 +12473,18 @@
 			)
 		)
 		(property "Description" "Cherry MX-style stabilizer"
-			(at 217.17 152.4 0)
+			(at 256.54 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 256.54 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9452,6 +12558,17 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 22.86 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "CPG151101S11-2"
 			(at 22.86 147.32 0)
 			(hide yes)
 			(show_name no)

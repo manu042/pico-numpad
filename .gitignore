@@ -1,8 +1,12 @@
 .DS_Store
 
 # KiCad
+.history/
 *.kicad_prl
 ~*.lck
 
 # FreeCAD
 *.FCBak
+
+# Rust
+target/

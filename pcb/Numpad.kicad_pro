@@ -76,7 +76,20 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|145110000|39520000|6fbdf9a0-909b-4aab-bf4f-06ff4303da66|00000000-0000-0000-0000-000000000000",
+          "Footprint origin moved to true center of encoder."
+        ],
+        [
+          "lib_footprint_mismatch|165700000|41202500|4c5e8ac0-5e13-4c1a-a608-84a7240dc65d|00000000-0000-0000-0000-000000000000",
+          "Silkscreen modified locally."
+        ],
+        [
+          "lib_footprint_mismatch|82080000|39520000|57363ee0-e9a1-4a82-93b0-e9bbf3b362ef|00000000-0000-0000-0000-000000000000",
+          "Footprint origin moved to true center of encoder."
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -256,7 +269,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "0"
+      "sch_revision": "1"
     },
     "layer_pairs": [],
     "layer_presets": [
@@ -308,7 +321,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|2400300|927100|e8e1557b-6c56-4a1a-aca8-a4a2a5a20a6d|d1122c44-ba39-4371-9fa6-898e39ede22e|/01a0c30f-cde1-49a0-be4f-51d2dc2ca613|/01a0c30f-cde1-49a0-be4f-51d2dc2ca613|/01a0c30f-cde1-49a0-be4f-51d2dc2ca613",
+        "AGND = GND (no ADC used)"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -633,8 +651,8 @@
         },
         {
           "group_by": true,
-          "label": "Exclude from Board",
-          "name": "${EXCLUDE_FROM_BOARD}",
+          "label": "Exclude from Position Files",
+          "name": "${EXCLUDE_FROM_POS_FILES}",
           "show": true
         },
         {
@@ -645,8 +663,8 @@
         },
         {
           "group_by": true,
-          "label": "Exclude from Position Files",
-          "name": "${EXCLUDE_FROM_POS_FILES}",
+          "label": "Exclude from Board",
+          "name": "${EXCLUDE_FROM_BOARD}",
           "show": true
         },
         {
@@ -660,12 +678,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part #",
+          "name": "LCSC Part #",
+          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -710,7 +758,11 @@
         "uuid": "01a0c30f-cde1-49a0-be4f-51d2dc2ca613"
       }
     ],
-    "used_designators": "A1,D1-22,H1-6,J1,MX1-20,S1-4,SW1-2",
+<<<<<<< HEAD
+    "used_designators": "A1,D1-22,H1-6,J1,MX1-20,NT1,R1-6,S1-4,SW1-2",
+=======
+    "used_designators": "A1,D1-22,H1-6,J1,MX1-20,NT1,R1-10,S1-4,SW1-4",
+>>>>>>> 9e7ed09 (Revision 1 - Rework matrix and encoder wiring)
     "variants": []
   },
   "sheets": [
