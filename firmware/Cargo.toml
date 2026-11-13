@@ -1,0 +1,46 @@
+
+[package]
+name = "firmware"
+version = "0.1.0"
+edition = "2024"
+
+publish = false
+
+[features]
+default = ["rp235xa"]
+rp235xa = ["embassy-rp/rp235xa"]
+
+[dependencies]
+# Embassy
+embassy-executor = { version = "0.10.0", features = ["defmt"] }
+embassy-time = { version = "0.5.1", features = ["defmt", "defmt-timestamp-uptime"] }
+embassy-rp = { version = "0.10.0", features = ["defmt", "unstable-pac", "time-driver", "critical-section-impl", "binary-info", "executor-thread", "executor-interrupt"] }
+embassy-sync = { version = "0.8.0", features = ["defmt"] }
+embassy-futures = { version = "0.1.2" }
+embassy-embedded-hal = { version = "0.6.0", features = ["defmt"] }
+
+# USB keyboard
+embassy-usb = { version = "0.6.0", features = ["defmt"] }
+usbd-hid = "0.10.0"
+
+# SPI display (joy-it SBC-LCD01, ST7789)
+embedded-graphics = "0.8.1"
+mipidsi = "0.10.0"
+embedded-hal-1 = { package = "embedded-hal", version = "1.0" }
+embedded-hal-async = "1.0"
+embedded-hal-bus = { version = "0.3", features = ["async"] }
+
+# Runtime and debugging
+cortex-m = { version = "0.7.6", features = ["inline-asm"] }
+cortex-m-rt = "0.7.0"
+defmt = "1.0.1"
+defmt-rtt = "1.0.0"
+panic-probe = { version = "1.0.0", features = ["print-defmt"] }
+
+# Helpers
+static_cell = "2.1"
+heapless = "0.9"
+
+[profile.release]
+# Enable generation of debug symbols even on release builds
+debug = true
